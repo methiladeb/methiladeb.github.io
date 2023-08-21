@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Methila Deb</title>
+    <style>
+        /* Apply CSS to center everything */
+        body {
+            background-color: #b195d2;
+            text-align: center; /* Horizontally center text */
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Vertically center content */
+            margin: 50;
+        }
+        p {
+            border: 1px solid #9e02ff; /* Border style, width, and color */
+            padding: 10px; /* Padding to the paragraph */
+            font-size: larger;
+            color: #ffffff;
+        }
+
+        /* Center the image within its parent */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Stack elements vertically */
+        }
+
+        /* Add styles for the name */
+        .name {
+            font-size: 36px; /* Increase the font size to make it larger */
+            margin-top: 20px; /* Add spacing between the image and the name */
+        }
+
+        /* Style the title */
+        h1.major {
+            font-size: 36px; /* Increase the font size to make it larger */
+            margin-top: 20px; /* Add spacing between the image and the title */
+            color: #9e02ff; /* Change the title text color to purple */
+        }
+        audio {
+            display: none; /* Set audio display to none */
+        }
+
+        /* Increase the font size of links */
+        a {
+            font-size: larger;
+            color: #ffffff; /* Set link color to white */
+        }
+
+        /* Style the "Important Links" title */
+        h2.important-links {
+            color: #9e02ff; /* Change the text color of the title to purple */
+        }
+
+        .credit-container {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .credit-text {
+            font-size: 14px;
+            color: #ffffff;
+            margin-left: 10px;
+        }
+
+        #bottom-right-gif {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Add background music and credit container -->
+    <div class="credit-container">
+        <audio controls autoplay loop>
+            <source src="music\Kronicle - 2 Minutes (No Copyright Music).mp4" type="audio/mp3">
+        </audio>
+        <p class="credit-text">Background music by Kronicle - 2 Minutes (No Copyright Music)</p>
+    </div>
+
+    <!-- Rest of your content -->
+    <body class="is-preload">
+        <!-- Page Wrapper -->
+        <div id="page-wrapper">
+            <!-- Wrapper -->
+            <div id="wrapper">
+                <!-- Panel (Banner) -->
+                <section class="panel banner right">
+                    <div class="content color0 span-3-75">
+                        <!-- Add an image from a folder -->
+                        <div class="image-container">
+                            <img
+                                id="profile-image"
+                                src="images\profile_pic.jpeg"
+                                alt="Description of your image"
+                                width="170"
+                                height="200"
+                            />
+                            <h1 class="major name">Methila Deb</h1>
+                        </div>
+                        <p>
+                            Welcome to my personal website! I'm currently an undergraduate
+                            student at CUNY Hunter College, majoring in Computer Science and
+                            minoring in Psychology. With three years of programming
+                            experience in C++, Python, and SQL under my belt, I'm excited to
+                            embark on internships in software companies to work towards my
+                            dream of becoming a Full-Stack Python Developer.
+                        </p>
+
+                        <!-- Add image at bottom right corner -->
+                        <img
+                          src="images\cartoon-gif.gif"
+                          alt="Description of your GIF"
+                          id="bottom-right-gif"
+                          width="150" 
+                          height="100" 
+                        />
+
+                        <!-- Add a title for the links -->
+                        <h2 class="important-links">Important Links:</h2>
+
+                        <!-- Add a link to resume -->
+                        <a
+                            href="images\Resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Resume
+                        </a>
+
+                        <br> <!-- line breaker -->
+
+                        <!-- Add a link to GitHub profile -->
+                        <a
+                            class="github-link"
+                            href="https://github.com/methiladeb" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Github profile
+                        </a>
+
+                        <br> <!-- line breaker -->
+
+                        <!-- Add a link to Linkedin profile -->
+                        <a
+                            class="Linkedin-link"
+                            href="https://www.linkedin.com/in/methila-deb-130147202/" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Linkedin profile
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>     
+    </body>
+</html>
