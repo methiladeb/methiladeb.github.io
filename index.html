@@ -8,7 +8,9 @@
     <style>
         /* Apply CSS to center everything */
         body {
-            background-color: #b195d2;
+            background: linear-gradient(45deg, #ff00e0, #b700ff, #ff00e0, #b700ff);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
             text-align: center; /* Horizontally center text */
             display: flex;
             flex-direction: column; /* Stack elements vertically */
@@ -17,6 +19,64 @@
             height: 100vh; /* Vertically center content */
             margin: 50;
         }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        /* Holographic text */
+        .holographic-text {
+            background: linear-gradient(45deg, #000000, #ff029ad5, #000000, #ff029ad5);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: text-gradient 15s ease infinite;
+            font-size: 36px; /* Increase the font size to make it larger */
+            margin-top: 20px; /* Add spacing between the image and the title */
+        }
+        
+        @keyframes text-gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Style the "Important Links" title */
+        h2.important-links {
+            background: linear-gradient(45deg, #000000, #ff029ad5, #000000, #ff029ad5);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: text-gradient 15s ease infinite;
+            font-size: 24px; /* Increase the font size to make it larger */
+        }
+
+        @keyframes gradients {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
         p {
             border: 1px solid #9e02ff; /* Border style, width, and color */
             padding: 10px; /* Padding to the paragraph */
@@ -38,12 +98,6 @@
             margin-top: 20px; /* Add spacing between the image and the name */
         }
 
-        /* Style the title */
-        h1.major {
-            font-size: 36px; /* Increase the font size to make it larger */
-            margin-top: 20px; /* Add spacing between the image and the title */
-            color: #9e02ff; /* Change the title text color to purple */
-        }
         audio {
             display: none; /* Set audio display to none */
         }
@@ -52,11 +106,6 @@
         a {
             font-size: larger;
             color: #ffffff; /* Set link color to white */
-        }
-
-        /* Style the "Important Links" title */
-        h2.important-links {
-            color: #9e02ff; /* Change the text color of the title to purple */
         }
 
         .credit-container {
@@ -89,7 +138,6 @@
         <p class="credit-text">Background music by Kronicle - 2 Minutes (No Copyright Music)</p>
     </div>
 
-    <!-- Rest of your content -->
     <body class="is-preload">
         <!-- Page Wrapper -->
         <div id="page-wrapper">
@@ -107,7 +155,7 @@
                                 width="170"
                                 height="200"
                             />
-                            <h1 class="major name">Methila Deb</h1>
+                            <h1 class="holographic-text">Methila Deb</h1> <!-- Apply holographic effect here -->
                         </div>
                         <p>
                             Welcome to my personal website! I'm currently an undergraduate
