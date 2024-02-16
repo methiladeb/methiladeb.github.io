@@ -5,205 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Methila Deb</title>
-    <style>
-        /* Apply CSS to center everything */
-        body {
-            background: linear-gradient(45deg, #ff00e0, #b700ff, #ff00e0, #b700ff);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-            text-align: center; /* Horizontally center text */
-            display: flex;
-            flex-direction: column; /* Stack elements vertically */
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Vertically center content */
-            margin: 50;
-        }
-
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-        
-        /* Holographic text */
-        .holographic-text {
-            background: linear-gradient(45deg, #000000, #ff029ad5, #000000, #ff029ad5);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            animation: text-gradient 15s ease infinite;
-            font-size: 36px; /* Increase the font size to make it larger */
-            margin-top: 20px; /* Add spacing between the image and the title */
-        }
-        
-        @keyframes text-gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        /* Style the "Important Links" title */
-        h2.important-links {
-            background: linear-gradient(45deg, #000000, #ff029ad5, #000000, #ff029ad5);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            animation: text-gradient 15s ease infinite;
-            font-size: 24px; /* Increase the font size to make it larger */
-        }
-
-        @keyframes gradients {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        p {
-            border: 1px solid #9e02ff; /* Border style, width, and color */
-            padding: 10px; /* Padding to the paragraph */
-            font-size: larger;
-            color: #ffffff;
-        }
-
-        /* Center the image within its parent */
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column; /* Stack elements vertically */
-        }
-
-        /* Add styles for the name */
-        .name {
-            font-size: 36px; /* Increase the font size to make it larger */
-            margin-top: 20px; /* Add spacing between the image and the name */
-        }
-
-        audio {
-            display: none; /* Set audio display to none */
-        }
-
-        /* Increase the font size of links */
-        a {
-            font-size: larger;
-            color: #ffffff; /* Set link color to white */
-        }
-
-        .credit-container {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            display: flex;
-            align-items: center;
-        }
-
-        .credit-text {
-            font-size: 14px;
-            color: #ffffff;
-            margin-left: 10px;
-        }
-
-        #bottom-right-gif {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body class="is-preload">
-    <!-- Page Wrapper -->
-    <div id="page-wrapper">
-        <!-- Wrapper -->
-        <div id="wrapper">
-            <!-- Panel (Banner) -->
-            <section class="panel banner right">
-                <div class="content color0 span-3-75">
-                    <!-- Add an image from a folder -->
-                    <div class="image-container">
-                        <img
-                            id="profile-image"
-                            src="images\profile_pic.jpeg"
-                            alt="Description of your image"
-                            width="170"
-                            height="200"
-                        />
-                        <h1 class="holographic-text">Methila Deb</h1> <!-- Holographic effect here -->
-                    </div>
-                    <p>
-                        Welcome to my personal website! I'm currently an undergraduate
-                        student at CUNY Hunter College, majoring in Computer Science and
-                        minoring in Psychology. With three years of programming
-                        experience in C++, Python, and SQL under my belt, I'm excited to
-                        embark on internships in software companies to work towards my
-                        dream of becoming a Full-Stack Python Developer.
-                    </p>
 
-                    <!-- Image at bottom right corner -->
-                    <img
-                        src="images\cartoon-gif.gif"
-                        alt="Description of your GIF"
-                        id="bottom-right-gif"
-                        width="150" 
-                        height="100" 
-                    />
+<body>
+    <div class="container" id="container">
+        <header class="header">
+            <a href="#" class="logo">Methila</a>
+            <nav class="navbar">
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1>Methila Deb</h1>
+                <p>I'm currently an undergraduate student at CUNY Hunter College, 
+                    majoring in Computer Science and minoring in Psychology. 
+                    With three years of programming experience in C++, Python, JavaScript, and SQL under my belt, 
+                    I'm excited to embark on my journey to work in tech!
+                </p>
 
-                    <!-- Title for the links -->
-                    <h2 class="important-links">Important Links:</h2>
-
-                    <!-- Link to resume -->
-                    <a
-                        href="images\Resume.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Resume
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/methila-deb-130147202/" target="_blank">
+                        <i class='bx bxl-linkedin'></i>
                     </a>
-
-                    <br> <!-- line breaker -->
-
-                    <!-- Link to GitHub profile -->
-                    <a
-                        class="github-link"
-                        href="https://github.com/methiladeb" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Github profile
-                    </a>
-
-                    <br> <!-- line breaker -->
-
-                    <!-- Link to Linkedin profile -->
-                    <a
-                        class="Linkedin-link"
-                        href="https://www.linkedin.com/in/methila-deb-130147202/" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Linkedin profile
+                    <a href="https://github.com/methiladeb" target="_blank">
+                        <i class='bx bxl-github'></i>
                     </a>
                 </div>
-            </section>
-        </div>
-    </div>     
+
+                <a href="images\resume.pdf" download="MethilaDeb_Resume.pdf" class="btn">Download Resume</a>
+            </div>
+
+            <div class="home-img">
+                <img src="images\profile_pic.jpeg">
+            </div>
+        </section>
+    </div>
 </body>
-</html>
