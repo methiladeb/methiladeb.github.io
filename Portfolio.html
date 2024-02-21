@@ -1,3 +1,4 @@
+<!-- The main purpose of this code is to display a webpage with a video catalog that includes thumbnails for each video. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,9 @@
     <div class="container" id="container">
         <header class="header">
             <a href="#" class="logo">Methila</a>
-            <nav class="navbar">
+
+             <!-- Navigation links to other pages of the website -->
+             <nav class="navbar">
                 <a href="index.html" class="active">Home</a>
                 <a href="About.html">About</a>
                 <a href="Portfolio.html">Portfolio</a>
@@ -21,7 +24,10 @@
             </nav>
         </header>
         
+        <!-- Video catalog section with thumbnails -->
         <div id="videoCatalog" class="video-catalog">
+
+            <!-- Each video-thumbnail div represents a video in the catalog with a data attribute linking to the video file -->
             <div class="video-thumbnail" data-video="videos/BaNanos Demo.mp4">
                 <img src="thumbnails/BaNanos Thumbnail.png" alt="BaNanos">
                 <p>BaNanos Art Simulator</p>
@@ -39,7 +45,11 @@
                 <p>TextTune Music Recommender</p>
             </div>
         </div>
+
+        <!-- Main video element that will play selected videos from the catalog, initially hidden -->
         <video id="mainVideo" controls hidden></video>
+
+        <!-- JavaScript file that handles the functionality of the video catalog, like displaying the clicked video -->
         <script src="videoCatalog.js"></script>
     </div>
 </body>

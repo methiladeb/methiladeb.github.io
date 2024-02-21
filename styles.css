@@ -1,5 +1,8 @@
+/* Importing the Poppins font family from Google Fonts with weights ranging from 300 to 900 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+/* Universal selector: Resets margin and padding to 0, sets box-sizing to border-box for all elements,
+   removes text decoration, and sets the default font family to Poppins for a consistent look across the website */
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +16,7 @@
     color: #333;
 }
 
+/* Header styles: Makes the header fixed to the top of the viewport, ensuring it's always visible */
 .header {
     position: fixed;
     top: 0;
@@ -32,6 +36,7 @@
     margin-right: auto;
 }
 
+/* Navbar link styles: Sets the font size, color, weight, and spacing for navbar links */
 .navbar a {
     font-size: 20px;
     color: #333;
@@ -40,11 +45,13 @@
     transition: 0.3s;
 }
 
+/* Navbar link hover and active states: Changes color on hover/active */
 .navbar a:hover,
 .navbar a:active {
     color: #dc38be
 }
 
+/* Styles for the toggle icon used in responsive designs or as a menu button */
 .toggle-icon {
     display: flex;
     font-size: 20px;
@@ -76,6 +83,7 @@
     margin: 15px 0;
 }
 
+/* Social media link styles: Sets the display, alignment, size, color, and other properties for icons */
 .social-media a{
     display: inline-flex;
     justify-content: center;
@@ -95,6 +103,7 @@
     color: #F0F3FD;
 }
 
+/* Button styles: Sets the appearance, spacing, and transition effects for buttons */
 .btn {
     display: inline-block;
     padding: 10px 30px;
@@ -113,6 +122,7 @@
     color: #613659;
 }
 
+/* Styles for images in the home section: Positions image and sets size */
 .home-img img {
     position: absolute;
     bottom: 0;
@@ -122,6 +132,7 @@
     border-radius: 50%;
 }
 
+/* Styles for unordered lists and nested lists */
 ul {
     padding-left: 20px; 
 }
@@ -129,6 +140,7 @@ ul ul {
     padding-left: 20px; 
 }
 
+/* Video catalog styling: Layout for video thumbnails */
 .video-catalog {
     margin-top: 60px;
     display: flex;
@@ -147,12 +159,14 @@ ul ul {
     transform: scale(1.05);
 }
 
+/* Styles for video thumbnail images: Sets size and fit */
 .video-thumbnail img {
     width: 160px; 
     height: 90px; 
     object-fit: cover;
 }
 
+/* Main video player styling: Sets size and alignment */
 #mainVideo {
     max-width: 60%;
     margin: 20px auto;
