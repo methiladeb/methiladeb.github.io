@@ -1,5 +1,3 @@
-# methila.github.io
 
-# This is a personal website for Methila Deb.
+# This is my personal website
 
-# https://methiladeb.github.io/methila.github.io/

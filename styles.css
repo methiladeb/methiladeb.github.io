@@ -122,5 +122,40 @@
     border-radius: 50%;
 }
 
+ul {
+    padding-left: 20px; 
+}
+ul ul {
+    padding-left: 20px; 
+}
 
+.video-catalog {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-thumbnail {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.video-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.video-thumbnail img {
+    width: 160px; 
+    height: 90px; 
+    object-fit: cover;
+}
+
+#mainVideo {
+    max-width: 60%;
+    margin: 20px auto;
+    display: block; 
+}
 

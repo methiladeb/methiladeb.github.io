@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Methila Deb</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <header class="header">
+            <a href="#" class="logo">Methila</a>
+            <nav class="navbar">
+                <a href="index.html" class="active">Home</a>
+                <a href="About.html">About</a>
+                <a href="Portfolio.html">Portfolio</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+        </header>
+        
+        <div id="videoCatalog" class="video-catalog">
+            <div class="video-thumbnail" data-video="videos/BaNanos Demo.mp4">
+                <img src="thumbnails/BaNanos Thumbnail.png" alt="BaNanos">
+                <p>BaNanos Art Simulator</p>
+            </div>
+            <div class="video-thumbnail" data-video="videos/Recipe App Demo.mp4">
+                <img src="thumbnails/Recipe App Thumbnail.png" alt="Recipe">
+                <p>Recipe App</p>
+            </div>
+            <div class="video-thumbnail" data-video="videos/Taskaroo Demo Video.mp4">
+                <img src="thumbnails/Taskaroo Thumbnail.png" alt="Taskaroo">
+                <p>Taskaroo</p>
+            </div>
+            <div class="video-thumbnail" data-video="videos/TextTune Demo.mp4">
+                <img src="thumbnails/TextTune Thumbnail.png" alt="TextTune">
+                <p>TextTune Music Recommender</p>
+            </div>
+        </div>
+        <video id="mainVideo" controls hidden></video>
+        <script src="videoCatalog.js"></script>
+    </div>
+</body>
+</html>
