@@ -2,7 +2,7 @@
 
 Welcome to the GitHub repository for my personal portfolio website! This site showcases my projects, experiences, and skills in the world of software development and beyond. Built with [technology stack], it serves as a digital introduction to who I am as a professional.
 
-The site can be visited here: https://methiladeb.github.io/methila.github.io/
+The site can be visited here: https://methiladeb.github.io/
 
 ## Overview
 
